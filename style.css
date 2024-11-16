@@ -1,0 +1,200 @@
+* {
+    font-family: Georgia, Times, "Times New Roman", serif;
+}
+body{
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+.quiz,
+.scores {
+    margin: 50px auto 0 auto;
+    max-width: 400px;
+}
+
+#top {
+    color: rgb(245, 171, 33);
+}
+
+.containerNew {
+    border: 5px solid rgba(238, 177, 223, 0.993);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 580px;
+    width: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    background-color: #8871c57a;
+    
+}
+
+p {
+    margin: 15px 15px;
+}
+
+.landing {
+    text-align: center;
+}
+
+.scoresHeader {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+}
+
+.timer {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+
+button {
+    display: inline-block;
+    margin: 10px;
+    cursor: pointer;
+    color: #fff;
+    background-color: #605286;
+    border-radius: 5px;
+    border: 0;
+    padding: 20px;
+}
+
+button:hover {
+    background-color: #893cbd;
+}
+
+.options button {
+    display: block;
+}
+
+input[type="text"] {
+    font-size: 100%;
+}
+
+.hide {
+    display: none;
+}
+
+.feedback {
+    font-style: bold;
+    font-size: 120%;
+    margin-top: 20px;
+    padding-top: 15px;
+    color: #fff;
+    border-top: 2px solid #4B0082;
+}
+
+ol {
+    padding-left: 15px;
+    max-height: 600px;
+    overflow: auto;
+}
+
+li {
+    padding: 5px;
+    list-style: decimal inside none;
+}
+
+li:nth-child(odd) {
+    background-color: #dfdae7;
+}
+
+/* Style for labels */
+label {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.containerNew {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+    padding: 20px;
+}
+
+/* Style for input fields */
+input[type="email"],
+input[type="password"] {
+    width: 50%; 
+    max-width: 400px; 
+    min-width: 280px; 
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+    text-align: center; /* Align text in the center */
+}
+
+/* Highlight the input field on focus */
+input[type="email"]:focus,
+input[type="password"]:focus {
+    border-color: #2575fc;
+    outline: none;
+}
+
+/* Style for the button */
+#loginButton {
+    width: 50%; /* Set button width to match inputs */
+    max-width: 400px; /* Limit maximum width */
+    min-width: 280px; /* Ensure usability on small screens */
+    padding: 10px;
+    font-size: 1rem;
+    background: #2575fc;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+    margin-top: 10px;
+}
+
+/* Button hover effect */
+#loginButton:hover {
+    background: #6a11cb;
+}
+
+/* Responsive adjustments for small screens */
+@media (max-width: 768px) {
+    input[type="email"],
+    input[type="password"],
+    #loginButton {
+        width: 70%; /* Increase width for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    input[type="email"],
+    input[type="password"],
+    #loginButton {
+        width: 90%; /* Almost full width on very small screens */
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .containerNew {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .containerNew {
+        width: 90%;
+    }
+
+    .quiz,
+    .scores {
+        max-width: 90%;
+    }
+}
+
+
+
