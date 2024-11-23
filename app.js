@@ -44,7 +44,8 @@ function signup() {
       const user = userCredential.user;
       console.log('User signed up:', user);
       alert('Sign up successful! Welcome, ' + user.email);
-      window.location.pathname = './login.html'
+      // window.location.pathname = './login.html'
+      window.location.href = '/auth-firebase-quiz/login.html'; // Updated path
     })
     .catch((error) => {
       // Handle sign-up errors
@@ -77,7 +78,8 @@ function signin() {
     console.log('Signed in successfully: ', user)
     alert('Logged in...')
     sessionStorage.setItem("user", user.email);
-    window.location.pathname = './welcome.html'
+    // window.location.pathname = './welcome.html'
+    window.location.href = '/auth-firebase-quiz/welcome.html'; // Updated path
     // ...
   })
   .catch((error) => {
