@@ -164,7 +164,7 @@ function questionClick() {
         feedbackEl.textContent =
             "Correct!";
         feedbackEl.style.color =
-            "green";
+            "white";
     }
     feedbackEl.setAttribute(
         "class",
