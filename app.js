@@ -44,7 +44,7 @@ function signup() {
       const user = userCredential.user;
       console.log('User signed up:', user);
       alert('Sign up successful! Welcome, ' + user.email);
-      window.location.pathname = 'login.html'
+      window.location.pathname = './login.html'
     })
     .catch((error) => {
       // Handle sign-up errors
